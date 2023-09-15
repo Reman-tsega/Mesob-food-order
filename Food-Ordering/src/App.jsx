@@ -11,16 +11,16 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   
   const closeHandler =()=>{
-    console.log("in app ")
     setIsOpen((prev)=>!prev)
     // props.onClose
-}
+  }
+  
 
   return (
     <div className="App">
       <ContextProvider>
 
-      {isOpen && <Cart onClose ={closeHandler} />}
+      {isOpen && <Cart   onClose ={closeHandler}  />}
       <Header onOpen ={closeHandler}/>
       <main>
 
